@@ -8,7 +8,7 @@ import ShowTodo from './ShowTodo';
 
 
     }
-    const submitHandler=(e)=>{
+    const SubmitHandler=(e)=>{
      e.preventDefault()
      const newData=task
      setTask(" ")
@@ -30,7 +30,7 @@ import ShowTodo from './ShowTodo';
                             <h4 className='text-center'>Todo App Using React JS</h4>
                         </div>
                     </div>
-                    <form onSubmit={submitHandler}>
+                    <form onSubmit={SubmitHandler}>
                         <div className="row justify-content-between text-white p-2">
                             <div className="form-group flex-fill mb-2 col-9">
                                 <input id="todo-input" type="text" className="form-control" value={task} onChange={onChangeHandler} />
